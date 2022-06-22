@@ -1,0 +1,124 @@
+.sidebar {
+    display: flex;
+    height: 90vh;
+    font-size: 1.5rem;
+}
+
+.sidebar-one {
+    flex: 0 0 25%;
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    flex-direction: column;
+    background-color: var(--gray1);
+}
+
+.sidebar-one-options {
+    padding: 0.3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.sidebar-one-options:hover {
+    transform: scale(1.1);
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+
+
+
+
+
+.sidebar-two {
+    flex-direction: column;
+    background-color: aqua;
+    flex: 1 0 10%;
+    display: flex;
+    background-color: var(--gray2);
+}
+
+.sidebar-two-header {
+    padding: 0.8rem 1.7rem;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.sidebar-two-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar-two-footer {
+    padding: 0.5rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5rem;
+}
+.sidebar-two-footer > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.sidebar-two-routes {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    flex: 1 0 80%;
+    overflow-x: hidden;
+    font-weight: bold;
+}
+
+.sidebar-two-routes::-webkit-scrollbar {
+    width: 5px;
+}
+.sidebar-two-routes::-webkit-scrollbar-thumb  {
+    -webkit-border-radius: 10px;
+     border-radius: 10px;
+     background: var(--gray1); 
+}   
+
+.sidebar-two-routes >  span {
+    font-size: 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    gap: 1rem;
+    display: flex;
+    justify-content: start;
+}
+.sidebar-two-routes > span:hover {
+    transform: scale(1.1);
+    background-color: var(--gray1);
+}
+
+.sidebar-two-routes > a {
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width: 750px) {
+    .sidebar-container {
+        display: none; 
+    }
+
+    .sidebar {
+        height: 85vh;
+    }
+
+    .sidebar-two-header {
+        display: none;
+    }
+}

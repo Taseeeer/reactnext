@@ -1,0 +1,37 @@
+.each-link-outer {
+    display: flex;
+    gap: 1rem; 
+    flex-wrap: wrap;
+}
+
+.each-file {
+    font-size: 5rem;
+}
+
+@media(max-width: 750px) {
+    .each-file {
+        font-size: 3rem;
+    }
+}
+
+
+.each-link > a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+}
+@media(max-width: 750px) {
+    .each-link > a {
+        font-size: 0.7rem;
+    }
+}
+
+.markdown-title {
+    margin-left: 0.8rem;
+}
+
+.each-link > a:hover {
+    transform: scale(1.1);
+}
