@@ -11,7 +11,7 @@ export default function Insert() {
             <p>
                 I dont know the exact reason why, but I have migrated this web application from Gatsby to Next.
                 I built it in Gatsby first, it was very performant but everytime I tried to deploy it, I got build-errors.
-                I searched for it but could'nt get anywhere, it was prolly conflicting packages, and those issues were posted by 
+                I searched for it but couldnt get anywhere, it was prolly conflicting packages, and those issues were posted by 
                 other people as well facing the same issues but no proper solution.
             </p>
             <p>So I decided to migrated from Gatsby to Next. Gatsby uses graphql and queries data from sanity, which is very fast.

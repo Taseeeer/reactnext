@@ -80,7 +80,7 @@ export default function Layout({ children }) {
                 </audio>
             </div>
             <div className="main-heading-outer">
-                <h1 className="main-heading">YOUR HOLY PLACE TO REACT.</h1>
+                <h1 className="main-heading">YOUR HOLY PLACE TO LEARN REACT.</h1>
             </div>
             <div className="nav-line">
                 { charging ? 

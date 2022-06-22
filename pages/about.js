@@ -9,7 +9,7 @@ export default function About() {
         <div>
             <h2 className="skew">Hello there 👋 <br/> </h2>
             <p style={{margin: "0"}}>I am Syed Taseer Shah. I graduated with a
-            bachelor's in software engineering. I like exploring about web technologies, primarily about react and its frameworks.
+            bachelors in software engineering. I like exploring web technologies, primarily react and its frameworks.
             </p>
             <p >This website is truely about JavaScirpt, React and other friends.</p>
             <p></p>

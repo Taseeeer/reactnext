@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import EachLink from '../components/EachLink.js';
 
 export default function Blog({ posts }) {
-    
     return (
         <Layout>
             <div className="blog-heading-outer">
