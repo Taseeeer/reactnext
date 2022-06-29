@@ -1,8 +1,7 @@
 import { HiSun, HiMoon } from "react-icons/hi";
 import { GoSettings, GoFlame } from "react-icons/go";
 import { BsHeadset } from "react-icons/bs";
-import { DiVim } from "react-icons/di";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaHome } from "react-icons/fa";
 
 import Link from "next/link";
 
@@ -10,9 +9,7 @@ import Link from "next/link";
 export default function Sidebar({ setSelectedTheme, handleFireAudio }) {
 
     const setFireTheme = () => {
-        setTimeout(() => {
-            setSelectedTheme('fire');
-        }, 300);
+        setSelectedTheme('fire');
         handleFireAudio();
     }
 
@@ -42,18 +39,21 @@ export default function Sidebar({ setSelectedTheme, handleFireAudio }) {
                     <Link href="/about">
                         <span>About</span>
                     </Link>
+                    <Link href="/mygithub">
+                        <span>My repos</span>
+                    </Link>
                     <Link href="/insert">
                         <span>Slow?</span>
                     </Link>
-                    <Link href="/update">
+                    <Link href="/delete">
                         <span>Delete</span>
                     </Link>
-                    <Link href="/delete">
+                    <Link href="/update">
                         <span>Update</span>
                     </Link>
                     <Link href="/">
                         <span style={{padding: "0.5rem 2rem"}}>
-                                <DiVim style={{fontSize: "2rem"}} />
+                                <FaHome style={{fontSize: "2rem"}} />
                         </span>
                     </Link>
                 </ul>

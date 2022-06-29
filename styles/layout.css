@@ -180,7 +180,8 @@
 }
 
 .code-background {
-    background-color: black;
+    background-color: var(--gray1);
+    border-radius: 10px;
 }
 
 

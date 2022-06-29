@@ -17,6 +17,7 @@ export default function Layout({ children }) {
 
     const classRef = useRef();
     const audioRef = useRef(null);
+    const clickRef = useRef(null);
     const firAudioRef = useRef(null);
 
     const [ charging, setCharging ] = useState(false);
@@ -25,6 +26,10 @@ export default function Layout({ children }) {
     const handleAudio = () => {
         audioRef.current.play();
         setCharging(!charging);
+    }
+
+    const handleClickSound = () => {
+        clickRef.current.play();
     }
 
     const handleFireAudio = () => firAudioRef.current.play();
@@ -40,16 +45,19 @@ export default function Layout({ children }) {
         switch(color) {
             case "purple": {
                 localStorage.setItem("theme", "layout purple-mode"); 
+                handleClickSound();
                 return classRef.current.className = "layout purple-mode";
             }
 
             case "vim": {
                 localStorage.setItem("theme", "layout vim-mode"); 
+                handleClickSound();
                 return classRef.current.className = "layout vim-mode";
             }
 
             case "basic": {
                 localStorage.setItem("theme", "layout basic-mode"); 
+                handleClickSound();
                 return classRef.current.className = "layout basic-mode";
             }
 
@@ -77,6 +85,9 @@ export default function Layout({ children }) {
                 </audio>
                 <audio id="fireaudio" style={{visibility: "hidden"}} ref={firAudioRef}>
                     <source src="/fire.wav"></source>
+                </audio>
+                <audio id="clickaudio" style={{visibility: "hidden"}} ref={clickRef}>
+                    <source src="/plasticclick.wav"></source>
                 </audio>
             </div>
             <div className="main-heading-outer">

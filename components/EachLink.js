@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillFile } from "react-icons/ai";
+import { DiJsBadge } from "react-icons/di";
 
 import Link from "next/link";
 
@@ -11,7 +12,7 @@ export default function EachLink({ posts }) {
                     <div key={each.title} className="each-link">
                         <Link href={`/post/${each.slug.current}`}>
                             <a>
-                            <AiFillFile className="each-file" />
+                            <DiJsBadge className="each-file" />
                             <span className="markdown-title">{each.title}</span>
                             </a>
                         </Link>
