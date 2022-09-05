@@ -71,6 +71,18 @@ export default function Layout({ children }) {
                 return classRef.current.className = "layout dark-mode";
             }
 
+            case "pink": {
+                localStorage.setItem("theme", "layout pink-mode"); 
+                handleClickSound();
+                return classRef.current.className = "layout pink-mode";
+            }
+
+            case "darkgray": {
+                localStorage.setItem("theme", "layout darkgray-mode"); 
+                handleClickSound();
+                return classRef.current.className = "layout darkgray-mode";
+            }
+
             case "default":
                 return classRef.current.className = "layout";
         }
@@ -102,6 +114,8 @@ export default function Layout({ children }) {
                 <GoPrimitiveDot className="nav-dots purple" onClick={() => setSelectedTheme('purple')} />
                 <GoPrimitiveDot className="nav-dots green" onClick={() => setSelectedTheme('vim')} />
                 <GoPrimitiveDot className="nav-dots white" onClick={() => setSelectedTheme('basic')} />
+                <GoPrimitiveDot className="nav-dots pink" onClick={() => setSelectedTheme('pink')} />
+                <GoPrimitiveDot className="nav-dots darkgray" onClick={() => setSelectedTheme('darkgray')} />
             </div>
             <div className="outer-container">
                 <div className="sidebar-mobview" style={{display: `${width[0] < 750 ? "block" : "none"}`}}>

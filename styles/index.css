@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'TheSilkscreen';
+    src: url('../public/Silkscreen/Silkscreen-Regular.ttf');
+}
+
 :root {
     --white: #fff;
     --gray1: rgb(71 85 105);
@@ -45,11 +50,28 @@ body {
 }
 
 .basic-mode {
-    --white: black;
+    color: 	#272727;
     --gray1: rgb(229 231 235);
     --gray2: rgb(209 213 219);
     --gray3: rgb(156 163 175);
     --gray4: rgb(107 114 128);
+
+}
+
+.pink-mode {
+    font-family: monospace;
+    --gray1: #FF8FB1;
+    --gray2: #FFB3B3;
+    --gray3:  #FF87B2;
+    --gray4: #FFBDE6;
+}
+
+.darkgray-mode {
+    font-family: TheSilkscreen;
+    --gray1: #33313B;
+    --gray2: #62374E;
+    --gray3:  #33313B;
+    --gray4: #FFBDE6;
 }
 
 
