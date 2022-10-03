@@ -33,11 +33,11 @@ const Post = ({ post }) => {
             <div className="blog-heading-outer">
                 <h2 className="blog-heading">{post?.title}</h2>
             </div>
-            <div ref={codeRef}>
+            <article ref={codeRef}>
                 <ReactMarkdown>
                   {post?.write}
                 </ReactMarkdown>
-            </div>
+            </article>
             <span className="date-and-time">{post?.dateandtime?.substring(0,10)}</span>
         </Layout>
         :
