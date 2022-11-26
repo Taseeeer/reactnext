@@ -194,3 +194,19 @@
 .skew {
     transform: skew(-7deg);
 }
+
+.for-twitter {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.twitter {
+    font-size: 1.8rem;
+}
+.twitter:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import Sidebar from "./Sidebar";
-import Image from "next/image";
 
 import { useWindowSize } from "../lib/useWindowResize";
 
@@ -8,6 +7,7 @@ import { GoPrimitiveDot } from "react-icons/go";
 import { BsBatteryCharging, BsBatteryHalf } from "react-icons/bs";
 import { BiCaretRight, BiCaretLeft } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
+import { playAudio } from "../lib/usePlayAudio";
 
 export default function Layout({ children }) {
 
@@ -29,7 +29,7 @@ export default function Layout({ children }) {
     }
 
     const handleClickSound = () => {
-        clickRef.current.play();
+        playAudio(clickRef);
     }
 
     const handleFireAudio = () => firAudioRef.current.play();
